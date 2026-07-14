@@ -7,7 +7,7 @@ export const siteContent = {
   seo: {
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://afmayorista.com.ar",
     title: "AF Mayorista | Abastecimiento B2B premium",
-    description: "Indumentaria, accesorios y productos mayoristas con atencion personalizada, disponibilidad y envios a todo el pais.",
+    description: "Indumentaria, accesorios y productos mayoristas con atencion personalizada, disponibilidad y envios a todo el pais de Argentina de Argentina.",
   },
   nav: [
     { label: "Inicio", href: "#inicio" },
@@ -21,7 +21,7 @@ export const siteContent = {
   hero: {
     eyebrow: "Importacion y distribucion mayorista",
     title: "Todo para impulsar tu negocio.",
-    copy: "Indumentaria, accesorios y productos mayoristas con atencion personalizada, disponibilidad y envios a todo el pais.",
+    copy: "Indumentaria, accesorios y productos mayoristas con atencion personalizada, disponibilidad y envios a todo el pais de Argentina de Argentina.",
     stats: [
       { value: "B2B", label: "Atencion pensada para mayoristas" },
       { value: "Pais", label: "Coordinacion de envios nacionales" },
@@ -39,7 +39,7 @@ export const siteContent = {
   benefits: [
     { icon: "boxes", title: "Stock disponible", text: "Disponibilidad orientada a compras por cantidad y reposicion constante." },
     { icon: "badge", title: "Precios por volumen", text: "Condiciones mayoristas para operaciones de reventa y abastecimiento." },
-    { icon: "truck", title: "Envios a todo el pais", text: "Coordinacion logistica para llegar a negocios, clubes e instituciones." },
+    { icon: "truck", title: "Envios a todo el pais de Argentina", text: "Coordinacion logistica para llegar a negocios, clubes e instituciones." },
     { icon: "headset", title: "Atencion personalizada", text: "Asesoramiento comercial para elegir productos, cantidades y alternativas." },
     { icon: "repeat", title: "Productos para reventa", text: "Categorias amplias para armar propuestas comerciales competitivas." },
   ],
@@ -69,7 +69,7 @@ export const siteContent = {
   faqs: [
     { q: "La venta es solamente mayorista?", a: "La web esta orientada a operaciones mayoristas, revendedores, negocios, clubes, empresas e instituciones." },
     { q: "Cual es la compra minima?", a: "La compra minima puede variar segun categoria y disponibilidad. Lo ideal es solicitar el catalogo y consultar la condicion vigente." },
-    { q: "Realizan envios a todo el pais?", a: "Si, se coordinan envios a distintas localidades del pais segun el pedido y el operador logistico disponible." },
+    { q: "Realizan envios a todo el pais de Argentina?", a: "Si, se coordinan envios a distintas localidades del pais segun el pedido y el operador logistico disponible." },
     { q: "Como solicito el catalogo?", a: "Podes pedirlo desde los botones de WhatsApp o completar el formulario mayorista para recibir asesoramiento." },
     { q: "Los precios se muestran en la web?", a: "No. Las condiciones se informan por catalogo o cotizacion para mantener informacion actualizada y segmentada por volumen." },
     { q: "Trabajan productos personalizados?", a: "Si. Hay opciones de estampado, bordado, sublimado y aplicacion de identidad segun producto y cantidad." },
