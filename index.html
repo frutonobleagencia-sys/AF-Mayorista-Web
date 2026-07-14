@@ -14,22 +14,28 @@
   <link rel="icon" href="assets/af-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+      <path d="M16.03 3.2c-7 0-12.68 5.58-12.68 12.45 0 2.35.68 4.64 1.96 6.61L3.2 28.8l6.75-2.06a12.9 12.9 0 0 0 6.08 1.52c7 0 12.68-5.58 12.68-12.45S23.03 3.2 16.03 3.2Zm0 22.96c-1.88 0-3.72-.5-5.32-1.44l-.38-.22-4 1.22 1.25-3.86-.25-.4a10.12 10.12 0 0 1-1.6-5.47c0-5.72 4.62-10.38 10.3-10.38 5.68 0 10.3 4.66 10.3 10.38 0 5.72-4.62 10.17-10.3 10.17Zm5.9-7.63c-.32-.16-1.9-.92-2.2-1.03-.3-.1-.52-.16-.74.16-.22.32-.85 1.03-1.04 1.24-.2.22-.38.24-.7.08-.32-.16-1.36-.49-2.6-1.55-.96-.84-1.6-1.87-1.8-2.19-.18-.32-.02-.5.14-.65.14-.14.32-.38.48-.56.16-.19.22-.32.32-.54.1-.22.05-.4-.03-.56-.08-.16-.74-1.76-1.02-2.4-.27-.62-.54-.54-.74-.55h-.63c-.22 0-.56.08-.86.4-.3.32-1.13 1.09-1.13 2.65s1.16 3.08 1.32 3.29c.16.22 2.28 3.42 5.52 4.8.77.33 1.38.53 1.85.68.78.24 1.48.2 2.04.12.62-.1 1.9-.76 2.17-1.5.27-.73.27-1.36.19-1.5-.08-.13-.3-.21-.62-.37Z"/>
+    </symbol>
+  </svg>
+
   <header class="header" data-header>
     <a class="logo" href="#inicio" aria-label="AF Mayorista inicio"><img src="assets/af-logo.png" alt="AF Mayorista"></a>
     <nav class="nav" aria-label="Navegación principal">
       <a href="#productos">Productos</a><a href="#beneficios">Beneficios</a><a href="#comprar">Cómo comprar</a><a href="#personalizacion">Personalización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
     </nav>
-    <a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#">Solicitar catálogo</a>
+    <a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Solicitar catálogo</span></a>
     <button class="menu" data-menu aria-label="Abrir menú"><span></span><span></span></button>
   </header>
 
   <nav class="mobile-nav" data-mobile-nav>
     <a href="#productos">Productos</a><a href="#beneficios">Beneficios</a><a href="#comprar">Cómo comprar</a><a href="#personalizacion">Personalización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
-    <a class="btn btn-red js-wa" data-message="Hola, llegué desde la web de AF Mayorista y quisiera hablar con un asesor." href="#">WhatsApp</a>
+    <a class="btn btn-red js-wa" data-message="Hola, llegué desde la web de AF Mayorista y quisiera hablar con un asesor." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>WhatsApp</span></a>
   </nav>
 
   <main>
@@ -41,8 +47,8 @@
           <h1>Todo para impulsar <span>tu negocio.</span></h1>
           <p class="hero-text">Indumentaria, accesorios y productos mayoristas con atención personalizada, disponibilidad y envíos a todo el país de Argentina.</p>
           <div class="actions">
-            <a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#">Solicitar catálogo</a>
-            <a class="btn btn-dark js-wa" data-event="asesor" data-message="Hola, llegué desde la web de AF Mayorista y quisiera hablar con un asesor." href="#">Hablar con asesor</a>
+            <a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Solicitar catálogo</span></a>
+            <a class="btn btn-dark js-wa" data-event="asesor" data-message="Hola, llegué desde la web de AF Mayorista y quisiera hablar con un asesor." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Hablar con asesor</span></a>
           </div>
           <div class="hero-points">
             <span>Stock disponible</span><span>Precios por volumen</span><span>Envíos Argentina</span>
@@ -68,18 +74,18 @@
       <div class="container">
         <div class="section-head reveal"><p class="kicker">Categorías</p><h2>Productos para reventa, clubes e instituciones.</h2><p>No mostramos precios públicos. El catálogo y las condiciones se envían por WhatsApp para mantener información actualizada.</p></div>
         <div class="cards categories">
-          <article class="cat reveal"><span>01</span><h3>Indumentaria</h3><p>Prendas para reventa, equipos y acciones institucionales.</p><a class="js-wa" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Indumentaria. ¿Me pueden enviar información mayorista?" href="#">Consultar</a></article>
-          <article class="cat reveal"><span>02</span><h3>Accesorios</h3><p>Artículos complementarios de uso diario con enfoque mayorista.</p><a class="js-wa" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Accesorios. ¿Me pueden enviar información mayorista?" href="#">Consultar</a></article>
-          <article class="cat reveal"><span>03</span><h3>Termos y botellas</h3><p>Productos térmicos, botellas y opciones prácticas por cantidad.</p><a class="js-wa" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Termos y botellas. ¿Me pueden enviar información mayorista?" href="#">Consultar</a></article>
-          <article class="cat reveal"><span>04</span><h3>Bolsos y mochilas</h3><p>Soluciones funcionales para negocios, equipos y eventos.</p><a class="js-wa" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Bolsos y mochilas. ¿Me pueden enviar información mayorista?" href="#">Consultar</a></article>
-          <article class="cat reveal"><span>05</span><h3>Personalizados</h3><p>Aplicación de identidad para empresas, clubes e instituciones.</p><a class="js-wa" data-event="categoria" data-message="Hola, estoy buscando productos personalizados. ¿Me pueden enviar información mayorista?" href="#">Consultar</a></article>
+          <article class="cat reveal"><span>01</span><h3>Indumentaria</h3><p>Prendas para reventa, equipos y acciones institucionales.</p><a class="js-wa wa-link" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Indumentaria. ¿Me pueden enviar información mayorista?" href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg>Consultar</a></article>
+          <article class="cat reveal"><span>02</span><h3>Accesorios</h3><p>Artículos complementarios de uso diario con enfoque mayorista.</p><a class="js-wa wa-link" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Accesorios. ¿Me pueden enviar información mayorista?" href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg>Consultar</a></article>
+          <article class="cat reveal"><span>03</span><h3>Termos y botellas</h3><p>Productos térmicos, botellas y opciones prácticas por cantidad.</p><a class="js-wa wa-link" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Termos y botellas. ¿Me pueden enviar información mayorista?" href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg>Consultar</a></article>
+          <article class="cat reveal"><span>04</span><h3>Bolsos y mochilas</h3><p>Soluciones funcionales para negocios, equipos y eventos.</p><a class="js-wa wa-link" data-event="categoria" data-message="Hola, estoy buscando productos de la categoría Bolsos y mochilas. ¿Me pueden enviar información mayorista?" href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg>Consultar</a></article>
+          <article class="cat reveal"><span>05</span><h3>Personalizados</h3><p>Aplicación de identidad para empresas, clubes e instituciones.</p><a class="js-wa wa-link" data-event="categoria" data-message="Hola, estoy buscando productos personalizados. ¿Me pueden enviar información mayorista?" href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg>Consultar</a></article>
         </div>
       </div>
     </section>
 
     <section class="catalog">
       <div class="container catalog-grid reveal">
-        <div><p class="kicker">Catálogo actualizado</p><h2>Encontrá el producto ideal para tu negocio.</h2><p>Recibí categorías, disponibilidad y condiciones mayoristas para cotizar compras por cantidad.</p><a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#">Recibir catálogo por WhatsApp</a></div>
+        <div><p class="kicker">Catálogo actualizado</p><h2>Encontrá el producto ideal para tu negocio.</h2><p>Recibí categorías, disponibilidad y condiciones mayoristas para cotizar compras por cantidad.</p><a class="btn btn-red js-wa" data-event="catalogo" data-message="Hola, vi la web de AF Mayorista y quiero recibir el catálogo actualizado." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Recibir catálogo por WhatsApp</span></a></div>
         <div class="catalog-visual" aria-hidden="true"><div class="phone"><span>AF</span><i></i><i></i><i></i></div><div class="folder"><b>CATÁLOGO</b></div></div>
       </div>
     </section>
@@ -98,7 +104,7 @@
 
     <section class="custom" id="personalizacion">
       <div class="container two-col reveal">
-        <div><p class="kicker">Personalización</p><h2>Tu marca también puede estar acá.</h2><p>Soluciones para empresas, clubes, instituciones, equipos y eventos: estampado, bordado, sublimado, identidad aplicada y producciones por cantidad.</p><a class="btn btn-red js-wa" data-event="personalizacion" data-message="Hola, quiero consultar por productos personalizados para mi empresa, club o institución." href="#">Consultar personalizados</a></div>
+        <div><p class="kicker">Personalización</p><h2>Tu marca también puede estar acá.</h2><p>Soluciones para empresas, clubes, instituciones, equipos y eventos: estampado, bordado, sublimado, identidad aplicada y producciones por cantidad.</p><a class="btn btn-red js-wa" data-event="personalizacion" data-message="Hola, quiero consultar por productos personalizados para mi empresa, club o institución." href="#"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Consultar personalizados</span></a></div>
         <ul class="feature-list"><li>Empresas</li><li>Clubes</li><li>Instituciones</li><li>Equipos</li><li>Eventos</li></ul>
       </div>
     </section>
@@ -134,7 +140,7 @@
           <select name="categoria" required><option value="">Categoría de interés</option><option>Indumentaria</option><option>Accesorios</option><option>Termos y botellas</option><option>Bolsos y mochilas</option><option>Personalizados</option><option>Pedido mixto</option></select>
           <input name="cantidad" placeholder="Cantidad estimada" required>
           <textarea name="mensaje" placeholder="Mensaje"></textarea>
-          <button class="btn btn-red" type="submit">Enviar consulta</button>
+          <button class="btn btn-red" type="submit"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>Enviar consulta</span></button>
           <p class="form-msg" data-form-msg></p>
         </form>
       </div>
@@ -145,7 +151,7 @@
     <img src="assets/af-logo.png" alt="AF Mayorista"><p>Abastecimiento mayorista para negocios, revendedores, clubes, empresas e instituciones.</p>
   </footer>
 
-  <a class="float-wa js-wa" data-event="flotante" data-message="Hola, estoy recorriendo la web de AF Mayorista y necesito asesoramiento." href="#" aria-label="WhatsApp"><span>WhatsApp</span></a>
+  <a class="float-wa js-wa" data-event="flotante" data-message="Hola, estoy recorriendo la web de AF Mayorista y necesito asesoramiento." href="#" aria-label="WhatsApp"><svg class="wa-icon"><use href="#icon-whatsapp"></use></svg><span>WhatsApp</span></a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
