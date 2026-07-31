@@ -4,18 +4,24 @@ Web institucional B2B premium en formato estático simple.
 
 ## Archivos
 
-- `index.html`: estructura y textos principales.
-- `styles.css`: diseño responsive, estética dark premium y layout.
-- `script.js`: WhatsApp, menú mobile, acordeones, formulario y animaciones GSAP.
+- `index.html`: estructura, textos, FAQ, formulario, footer y pop-up.
+- `styles.css`: diseño responsive, estética dark premium, layout, modal y footer.
+- `script.js`: datos compartidos, WhatsApp, catálogo, menú mobile, acordeones, formulario, pop-up y animaciones GSAP.
 - `assets/`: logo e imagen social.
 
-## WhatsApp
+## Datos a completar
 
-Editar el número en `script.js`:
+Editar las constantes en `script.js`:
 
 ```js
-const WHATSAPP_NUMBER = "549XXXXXXXXXX";
+const WHATSAPP_NUMBER = "";
+const CATALOGO_DRIVE_URL = "";
+const BUSINESS_ADDRESS = "";
+const BUSINESS_HOURS = "";
+const BUSINESS_EMAIL = "admairflowstore@gmail.com";
 ```
+
+También se puede completar `instagram` dentro de `BUSINESS_DATA` cuando exista la URL real.
 
 ## Publicación
 
