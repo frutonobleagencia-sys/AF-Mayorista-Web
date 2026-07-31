@@ -1,5 +1,6 @@
-const WHATSAPP_NUMBER = ""; // Ej: 549XXXXXXXXXX
-const CATALOGO_DRIVE_URL = "";
+const WHATSAPP_NUMBER = "5493516148018";
+const WHATSAPP_CATALOG_URL = "https://wa.me/c/5493516148018";
+const CATALOGO_DRIVE_URL = WHATSAPP_CATALOG_URL;
 const BUSINESS_ADDRESS = "";
 const BUSINESS_HOURS = "";
 const BUSINESS_EMAIL = "admairflowstore@gmail.com";
@@ -7,6 +8,7 @@ const BUSINESS_EMAIL = "admairflowstore@gmail.com";
 const BUSINESS_DATA = {
   email: BUSINESS_EMAIL,
   whatsapp: WHATSAPP_NUMBER,
+  whatsappCatalogUrl: WHATSAPP_CATALOG_URL,
   address: BUSINESS_ADDRESS,
   hours: BUSINESS_HOURS,
   instagram: "",
@@ -29,7 +31,8 @@ document.querySelectorAll(".js-wa").forEach((link) => {
     event.preventDefault();
     const message = link.dataset.message || "Hola, llegué desde la web de AF Mayorista y quisiera hablar con un asesor.";
     window.dispatchEvent(new CustomEvent("af_whatsapp_click", { detail: { event: link.dataset.event || "whatsapp" } }));
-    window.open(wa(message), "_blank", "noopener,noreferrer");
+    const directUrl = link.dataset.directUrl || BUSINESS_DATA.whatsappCatalogUrl;
+    window.open(directUrl || wa(message), "_blank", "noopener,noreferrer");
   });
 });
 
@@ -40,7 +43,7 @@ document.querySelectorAll(".js-catalog").forEach((link) => {
   link.addEventListener("click", (event) => {
     if (!BUSINESS_DATA.catalogDriveUrl) {
       event.preventDefault();
-      if (catalogStatus) catalogStatus.textContent = "La URL del catálogo de Drive está pendiente de completar.";
+      if (catalogStatus) catalogStatus.textContent = "La URL del catálogo de WhatsApp está pendiente de completar.";
     }
   });
 });
